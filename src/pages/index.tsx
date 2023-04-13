@@ -47,9 +47,11 @@ const IndexPage = () => {
         <div>
           <div className="my-4">
             <div className="flex space-x-8 my-12">
-              <div><h2 className='font-bold text-lg'>Helpful responses</h2>
+              <div>
+                <h2 className='font-bold text-lg'>Helpful responses</h2>
                 <p>{data?.thumb_up.length}</p></div>
-              <div><h2 className='font-bold text-lg'>Helpful responses</h2>
+              <div>
+                <h2 className='font-bold text-lg'>Unhelpful responses</h2>
                 <p>{data?.thumb_down.length}</p></div>
             </div>
             <button
