@@ -2,3 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 @import './animations.css';
+
+.checkbox:checked {
+  @apply bg-black;
+  background-color: black;
+}
+
+.checkbox:focus {
+  @apply ring-gray-300;
+}
