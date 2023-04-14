@@ -107,9 +107,11 @@ const IndexPage = () => {
                       <br />
                       <strong>Response:</strong> {item.answer}
                       <br />
-                      <small>
-                        <strong>Comment:</strong> {item.comment}
-                      </small>
+                      {item.comment ? (
+                        <span className='text-sm py-1 px-2 mt-1 block clear border-2 border-gray-500 w-full'>
+                          <strong>Comment:</strong> {item.comment}
+                        </span>
+                      ) : null}
                     </p>
                   </div>
                 ))}
